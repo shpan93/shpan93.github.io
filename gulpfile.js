@@ -87,9 +87,7 @@ gulp.task('build-bundle', function() {
 gulp.task('copy', function() {
 
     return gulp.src(['./assets/**/*', 'index.html'])
-        .pipe(gulp.dest('./public'))
-        .pipe.src('./public')
-        .pipe(ghPages());
+        .pipe(gulp.dest('./public'));
 
 
 });
@@ -100,4 +98,4 @@ gulp.task('deploy-gh', function() {
 
 
 });
-gulp.task('deploy', gulp.series('build-bundle', 'copy', 'deploy-gh'));
+gulp.task('deploy', ['build-bundle', 'copy', 'deploy-gh']);
