@@ -1,0 +1,5 @@
+export const UPDATE_DISPLAYED = 'UPDATE_DISPLAYED';
+export const ADD_EVENT = 'ADD_EVENT';
+export const REMOVE_EVENT = 'REMOVE_EVENT';
+export const SET_SELECTED = 'SET_SELECTED';
+export const TOGGLE_ADD_TASK = 'TOGGLE_ADD_TASK';
